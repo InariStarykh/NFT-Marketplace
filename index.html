@@ -8,7 +8,7 @@
     <title>NFT Marketplace</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="header__container">
           <a class="header__logo logo" href="/">
@@ -1191,7 +1191,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="subscribe-section">
         <div class="container">
           <div class="subscribe-section__container">
@@ -1208,14 +1208,9 @@
                 <p class="subscribe-section__text">
                   Get exclusive promotions & updates straight to your inbox.
                 </p>
-                <form class="input-wrapper" action="">
+                <!-- <form class="subscribe-section__input" action="">
                   <input
-                    class="input desktop"
-                    type="email"
-                    value="Enter Your Email Address"
-                  />
-                  <input
-                    class="input laptop"
+                    class="input__main"
                     type="email"
                     value="Enter your email here"
                   />
@@ -1224,6 +1219,24 @@
                       <use href="./images/icons.svg#icon-envelope-simple"></use>
                     </svg>
                     <span>Subscribe</span>
+                  </button>
+                </form>
+                <button class="input__button_mobile button" type="button">
+                  <svg class="button-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-envelope-simple"></use>
+                  </svg>
+                  <span>Subscribe</span>
+                </button> -->
+            
+                <form class="subscribe-section__form" action="">
+                  <label class="subscribe-section__label visually-hidden" for="input-text">Enter your email here</label>
+                  <input class="subscribe-section__input" type="email" name="input-text" id="input-text" placeholder="Enter your email here">
+
+                  <button class="subscribe-section__button" type="submit">
+                    <svg class="button-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-envelope-simple"></use>
+                  </svg>
+                  <span>Subscribe</span>
                   </button>
                 </form>
               </div>
@@ -1301,24 +1314,17 @@
                 </li>
               </ul>
             </nav>
-            <div class="footer__input">
+            <div class="footer__input-box">
               <h5 class="footer__title">Join our weekly digest</h5>
               <p class="footer__text">
                 Get exclusive promotions & updates straight to your inbox.
               </p>
-              <form class="input-wrapper footer" action="">
-                <input
-                  class="input input-width"
-                  type="email"
-                  value="Enter your email here"
-                />
-                <button
-                  class="input__button footer button-width button"
-                  type="button"
-                >
-                  Subscribe
-                </button>
-              </form>
+                <form class="footer__form" action="">
+                  <label class="footer__label visually-hidden" for="input-text">Enter your email here</label>
+                  <input class="footer__input" type="email" name="input-text" id="input-text" placeholder="Enter your email here">
+
+                  <button class="footer__button" type="submit">Subscribe</button>
+                </form>
             </div>
           </div>
           <div class="footer__copright">
